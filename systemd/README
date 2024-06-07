@@ -10,6 +10,7 @@
        将chatroom的配置文件server.yaml放在/etc/chatroom/路径下
 
 [操作]
+    *) sudo useradd -l -s /usr/sbin/nologin zhangsan
     *) sudo systemctl daemon-reload
     *) sudo systemctl start chatroom.service
     *) sudo systemctl status chatroom.service
