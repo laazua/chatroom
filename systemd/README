@@ -1,7 +1,7 @@
 ### service
 
 [描述]
-    *) 使用systemd管理服务进程进程
+    *) 使用systemd管理服务进程
 
 [配置]
     *) 将chatroot.service配置放在/usr/lib/systemd/system
