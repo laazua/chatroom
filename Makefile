@@ -1,7 +1,7 @@
 ############################## 项目打包 ##################################
 # 静态链接参数(不建议): -a -ldflags '-linkmode external -extldflags "-static"', 要求编译环境和运行环境一致
 
-SERVER := chatroot
+SERVER := chatroom
 CLIENT := chatclient
 
 # make
