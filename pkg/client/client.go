@@ -40,6 +40,7 @@ func (cc *ChatClient) receiveMessages() {
 }
 
 func (cc *ChatClient) sendMessages() {
+        fmt.Println("Enter your nickname: ")
 	scanner := bufio.NewScanner(os.Stdin)
 	for scanner.Scan() {
 		input := scanner.Text()

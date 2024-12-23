@@ -67,9 +67,9 @@ func (cs *ChatServer) handleConn(conn net.Conn) {
 	ch := make(chan string)
 	go cs.clientWriter(conn, ch)
 
+	// fmt.Fprint(conn, "Enter your nickname: ")
 	input := bufio.NewScanner(conn)
 	var who string
-	fmt.Fprint(conn, "Enter your nickname: ")
 	if input.Scan() {
 		who = input.Text()
 	}
